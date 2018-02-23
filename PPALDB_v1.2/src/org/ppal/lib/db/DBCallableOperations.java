@@ -432,6 +432,8 @@ public class DBCallableOperations {
 			} catch (SQLException ex) {
 				DBLogger.error(ex.getLocalizedMessage());
 				DBCon.RollbackOperation(con);
+				
+				System.out.println("here");
 				return null;
 			}
 
